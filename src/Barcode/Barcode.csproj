@@ -7,8 +7,8 @@
     <ProjectGuid>{07A704C8-FDCF-4AF1-B61A-B05C4940538E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Barcode.Core</RootNamespace>
-    <AssemblyName>Barcode.Core</AssemblyName>
+    <RootNamespace>Barcode</RootNamespace>
+    <AssemblyName>Barcode</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>false</Deterministic>

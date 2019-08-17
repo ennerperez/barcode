@@ -16,8 +16,8 @@ var solutions = new Dictionary<string, string> {
 };
 
 // Define directories.
-var outputDirectory = "../build/" + configuration;
-var buildDir = Directory("../" + outputDirectory);
+var buildDir =  Directory("../../build/" + configuration);
+var outputDir =  Directory("build/" + configuration);
 
 // Define AssemblyInfo source.
 var assemblyInfoVersion = ParseAssemblyInfo("./src/.files/AssemblyInfo.Version.cs");
@@ -111,7 +111,7 @@ Task("Build-NuGet-Packages")
 				var assemblyInfo = ParseAssemblyInfo(path.FullName + "/Properties/AssemblyInfo.cs");
 				nuGetPackSettings = new NuGetPackSettings()
 				{
-					OutputDirectory = buildDir,
+					OutputDirectory = outputDir,
 					IncludeReferencedProjects = false,
 					Id = assemblyInfo.Title.Replace(" ", "."),
 					Title = assemblyInfo.Title,
@@ -126,7 +126,7 @@ Task("Build-NuGet-Packages")
 			{
 				nuGetPackSettings = new NuGetPackSettings()
 				{
-					OutputDirectory = buildDir,
+					OutputDirectory = outputDir,
 					IncludeReferencedProjects = false,
 					//Id = assemblyInfo.Title.Replace(" ", "."),
 					//Title = assemblyInfo.Title,

@@ -59,9 +59,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Barcode.Core\Barcode.Core.csproj">
+    <ProjectReference Include="..\Barcode\Barcode.csproj">
       <Project>{07a704c8-fdcf-4af1-b61a-b05c4940538e}</Project>
-      <Name>Barcode.Core</Name>
+      <Name>Barcode</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

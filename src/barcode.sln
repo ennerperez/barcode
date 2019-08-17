@@ -14,7 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barcode.Core", "Barcode.Core\Barcode.Core.csproj", "{07A704C8-FDCF-4AF1-B61A-B05C4940538E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barcode", "Barcode\Barcode.csproj", "{07A704C8-FDCF-4AF1-B61A-B05C4940538E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".files", ".files", "{999A2AD2-EF03-454C-8343-9EE716780800}"
 	ProjectSection(SolutionItems) = preProject

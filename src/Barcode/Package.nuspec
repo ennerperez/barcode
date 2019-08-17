@@ -17,6 +17,6 @@
   </metadata>
   <files>
     <file src="..\..\LICENSE.md" target="LICENSE.md" />
-    <file src="..\..\build\release\Barcode.Core.dll" target="lib\net40\Barcode.Core.dll" />
+    <file src="..\..\build\release\Barcode.dll" target="lib\net40\Barcode.dll" />
   </files>
 </package>
