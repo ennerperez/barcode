@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".files", ".files", "{999A2A
 		.files\AssemblyInfo.Version.cs = .files\AssemblyInfo.Version.cs
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barcode.Code128", "Barcode.Code128\Barcode.Code128.csproj", "{3B420F7C-B3AC-461E-91B1-4A252AA00AF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{07A704C8-FDCF-4AF1-B61A-B05C4940538E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07A704C8-FDCF-4AF1-B61A-B05C4940538E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07A704C8-FDCF-4AF1-B61A-B05C4940538E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B420F7C-B3AC-461E-91B1-4A252AA00AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B420F7C-B3AC-461E-91B1-4A252AA00AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B420F7C-B3AC-461E-91B1-4A252AA00AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B420F7C-B3AC-461E-91B1-4A252AA00AF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
