@@ -26,7 +26,7 @@ var assemblyInfoCommon = ParseAssemblyInfo("./src/.files/AssemblyInfo.Common.cs"
 // Define version.
 var elapsedSpan = new TimeSpan(DateTime.Now.Ticks - new DateTime(2001, 1, 1).Ticks);
 var assemblyVersion = assemblyInfoVersion.AssemblyVersion.Replace("*", elapsedSpan.Ticks.ToString().Substring(4, 4));
-var version = EnvironmentVariable("APPVEYOR_BUILD_VERSION") ?? Argument("version", assemblyVersion);
+var version = new System.Version(EnvironmentVariable("APPVEYOR_BUILD_VERSION") ?? Argument("version", assemblyVersion)).ToString(3);
 
 //////////////////////////////////////////////////////////////////////
 // TASKS
