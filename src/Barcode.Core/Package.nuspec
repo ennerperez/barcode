@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata minClientVersion="2.12">
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>Barcode.NET</title>
+    <authors>Enner Pérez</authors>
+    <owners>Enner Pérez</owners>
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectUrl>https://github.com/ennerperez/barcode</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/ennerperez/barcode/master/src/.editoricon.png</iconUrl>
+    <description>Barcode Core for .NET.</description>
+    <copyright>© Enner Pérez. All rights reserved.</copyright>
+    <tags>Barcode</tags>
+    <repository type="git" url="https://github.com/ennerperez/barcode" />
+  </metadata>
+  <files>
+    <file src="..\..\LICENSE.md" target="LICENSE.md" />
+    <file src="..\..\build\release\Barcode.Core.dll" target="lib\net40\Barcode.Core.dll" />
+  </files>
+</package>
