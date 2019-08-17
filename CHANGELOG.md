@@ -6,10 +6,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.0] - [UNRELEASED]
 ### Added
-- Feature 1
-
-### Changed
-- Feature 2
-
-### Removed
-- Feature 3
+- Barcode Core
