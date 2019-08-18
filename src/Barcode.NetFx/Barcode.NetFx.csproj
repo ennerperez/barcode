@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{07A704C8-FDCF-4AF1-B61A-B05C4940538E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Barcode</RootNamespace>
+    <AssemblyName>Barcode</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>false</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\.files\AssemblyInfo.Common.cs">
+      <Link>Properties\AssemblyInfo.Common.cs</Link>
+    </Compile>
+    <Compile Include="..\.files\AssemblyInfo.Version.cs">
+      <Link>Properties\AssemblyInfo.Version.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\BarcodeDraw.cs">
+      <Link>BarcodeDraw.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\BarcodeDrawBase.cs">
+      <Link>BarcodeDrawBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\BarcodeDrawFactory.cs">
+      <Link>BarcodeDrawFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\BarcodeMetrics.cs">
+      <Link>BarcodeMetrics.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\BarcodeMetrics1d.cs">
+      <Link>BarcodeMetrics1d.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\BarcodeMetrics2d.cs">
+      <Link>BarcodeMetrics2d.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\BarcodeSymbology.cs">
+      <Link>BarcodeSymbology.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\BarGlyph.cs">
+      <Link>BarGlyph.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\BinaryPitchBarcodeDraw.cs">
+      <Link>BinaryPitchBarcodeDraw.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\BinaryPitchGlyph.cs">
+      <Link>BinaryPitchGlyph.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\BinaryPitchVaryLengthBarcodeDraw.cs">
+      <Link>BinaryPitchVaryLengthBarcodeDraw.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\BinaryPitchVaryLengthGlyph.cs">
+      <Link>BinaryPitchVaryLengthGlyph.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\Checksum.cs">
+      <Link>Checksum.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\CompositeGlyph.cs">
+      <Link>CompositeGlyph.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\FactoryChecksum.cs">
+      <Link>FactoryChecksum.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\Glyph.cs">
+      <Link>Glyph.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\GlyphFactory.cs">
+      <Link>GlyphFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\IBarcodeDrawFactory.cs">
+      <Link>IBarcodeDrawFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\IBarGlyph.cs">
+      <Link>IBarGlyph.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\IBinaryPitchGlyph.cs">
+      <Link>IBinaryPitchGlyph.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\IGlyph.cs">
+      <Link>IGlyph.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\IVaryLengthGlyph.cs">
+      <Link>IVaryLengthGlyph.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\MultisetGlyph.cs">
+      <Link>MultisetGlyph.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Shared\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package.nuspec" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
