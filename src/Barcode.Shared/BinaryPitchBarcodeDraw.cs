@@ -1,8 +1,8 @@
+using System;
+using System.Drawing;
+
 namespace Barcode
 {
-    using System;
-    using System.Drawing;
-
     /// <summary>
     /// <b>BinaryPitchBarcodeDraw</b> is an abstract class that serves as a
     /// base class for rendering all dual-pitch barcode symbologies.
