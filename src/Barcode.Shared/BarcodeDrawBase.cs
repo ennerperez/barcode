@@ -1,5 +1,4 @@
-﻿using Barcode.Core;
-using System;
+﻿using System;
 using System.Drawing;
 
 namespace Barcode

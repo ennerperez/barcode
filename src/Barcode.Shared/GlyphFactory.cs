@@ -1,8 +1,8 @@
+using System;
+using System.Collections.Generic;
+
 namespace Barcode
 {
-    using System;
-    using System.Collections.Generic;
-
     /// <summary>
     /// Abstract class factory for retrieval of barcode glyph objects.
     /// </summary>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Barcode.Core
+namespace Barcode
 {
     /// <summary>
     /// <c>BarcodeMetrics2d</c> defines the measurement metrics used to render

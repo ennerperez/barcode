@@ -50,16 +50,30 @@
     <Compile Include="..\.files\AssemblyInfo.Version.cs">
       <Link>Properties\AssemblyInfo.Version.cs</Link>
     </Compile>
-    <Compile Include="BarcodeDraw.cs" />
-    <Compile Include="Checksum.cs" />
-    <Compile Include="DrawFactory.cs" />
-    <Compile Include="Glyph.cs" />
-    <Compile Include="GlyphFactory.cs" />
-    <Compile Include="SpecialGlyph.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\Barcode.Code128.Shared\BarcodeDraw.cs">
+      <Link>BarcodeDraw.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Code128.Shared\Checksum.cs">
+      <Link>Checksum.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Code128.Shared\DrawFactory.cs">
+      <Link>DrawFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Code128.Shared\Glyph.cs">
+      <Link>Glyph.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Code128.Shared\GlyphFactory.cs">
+      <Link>GlyphFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Code128.Shared\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Barcode.Code128.Shared\SpecialGlyph.cs">
+      <Link>SpecialGlyph.cs</Link>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Barcode\Barcode.csproj">
+    <ProjectReference Include="..\Barcode.NetFx\Barcode.NetFx.csproj">
       <Project>{07a704c8-fdcf-4af1-b61a-b05c4940538e}</Project>
       <Name>Barcode</Name>
     </ProjectReference>

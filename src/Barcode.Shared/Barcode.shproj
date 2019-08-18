@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>e41ecf41-1e46-49b2-85e3-fb45ea672a2e</ProjectGuid>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CodeSharing\Microsoft.CodeSharing.Common.Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CodeSharing\Microsoft.CodeSharing.Common.props" />
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Include="BarcodeDraw.cs" />
+    <Compile Include="BarcodeDrawBase.cs" />
+    <Compile Include="BarcodeDrawFactory.cs" />
+    <Compile Include="BarcodeMetrics.cs" />
+    <Compile Include="BarcodeMetrics1d.cs" />
+    <Compile Include="BarcodeMetrics2d.cs" />
+    <Compile Include="BarcodeSymbology.cs" />
+    <Compile Include="BarGlyph.cs" />
+    <Compile Include="BinaryPitchBarcodeDraw.cs" />
+    <Compile Include="BinaryPitchGlyph.cs" />
+    <Compile Include="BinaryPitchVaryLengthBarcodeDraw.cs" />
+    <Compile Include="BinaryPitchVaryLengthGlyph.cs" />
+    <Compile Include="Checksum.cs" />
+    <Compile Include="CompositeGlyph.cs" />
+    <Compile Include="FactoryChecksum.cs" />
+    <Compile Include="Glyph.cs" />
+    <Compile Include="GlyphFactory.cs" />
+    <Compile Include="IBarcodeDrawFactory.cs" />
+    <Compile Include="IBarGlyph.cs" />
+    <Compile Include="IBinaryPitchGlyph.cs" />
+    <Compile Include="IGlyph.cs" />
+    <Compile Include="IVaryLengthGlyph.cs" />
+    <Compile Include="MultisetGlyph.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="Barcode.Shared.projitems" Label="Shared" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CodeSharing\Microsoft.CodeSharing.CSharp.targets" />
+</Project>

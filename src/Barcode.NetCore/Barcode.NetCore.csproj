@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Deterministic>false</Deterministic>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyName>BarcodeCore</AssemblyName>
+    <RootNamespace>Barcode</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\.files\AssemblyInfo.Common.cs" Link="Properties\AssemblyInfo.Common.cs" />
+    <Compile Include="..\.files\AssemblyInfo.Version.cs" Link="Properties\AssemblyInfo.Version.cs" />
+    <Compile Include="..\Barcode.Shared\BarcodeDraw.cs" Link="BarcodeDraw.cs" />
+    <Compile Include="..\Barcode.Shared\BarcodeDrawBase.cs" Link="BarcodeDrawBase.cs" />
+    <Compile Include="..\Barcode.Shared\BarcodeDrawFactory.cs" Link="BarcodeDrawFactory.cs" />
+    <Compile Include="..\Barcode.Shared\BarcodeMetrics.cs" Link="BarcodeMetrics.cs" />
+    <Compile Include="..\Barcode.Shared\BarcodeMetrics1d.cs" Link="BarcodeMetrics1d.cs" />
+    <Compile Include="..\Barcode.Shared\BarcodeMetrics2d.cs" Link="BarcodeMetrics2d.cs" />
+    <Compile Include="..\Barcode.Shared\BarcodeSymbology.cs" Link="BarcodeSymbology.cs" />
+    <Compile Include="..\Barcode.Shared\BarGlyph.cs" Link="BarGlyph.cs" />
+    <Compile Include="..\Barcode.Shared\BinaryPitchBarcodeDraw.cs" Link="BinaryPitchBarcodeDraw.cs" />
+    <Compile Include="..\Barcode.Shared\BinaryPitchGlyph.cs" Link="BinaryPitchGlyph.cs" />
+    <Compile Include="..\Barcode.Shared\BinaryPitchVaryLengthBarcodeDraw.cs" Link="BinaryPitchVaryLengthBarcodeDraw.cs" />
+    <Compile Include="..\Barcode.Shared\BinaryPitchVaryLengthGlyph.cs" Link="BinaryPitchVaryLengthGlyph.cs" />
+    <Compile Include="..\Barcode.Shared\Checksum.cs" Link="Checksum.cs" />
+    <Compile Include="..\Barcode.Shared\CompositeGlyph.cs" Link="CompositeGlyph.cs" />
+    <Compile Include="..\Barcode.Shared\FactoryChecksum.cs" Link="FactoryChecksum.cs" />
+    <Compile Include="..\Barcode.Shared\Glyph.cs" Link="Glyph.cs" />
+    <Compile Include="..\Barcode.Shared\GlyphFactory.cs" Link="GlyphFactory.cs" />
+    <Compile Include="..\Barcode.Shared\IBarcodeDrawFactory.cs" Link="IBarcodeDrawFactory.cs" />
+    <Compile Include="..\Barcode.Shared\IBarGlyph.cs" Link="IBarGlyph.cs" />
+    <Compile Include="..\Barcode.Shared\IBinaryPitchGlyph.cs" Link="IBinaryPitchGlyph.cs" />
+    <Compile Include="..\Barcode.Shared\IGlyph.cs" Link="IGlyph.cs" />
+    <Compile Include="..\Barcode.Shared\IVaryLengthGlyph.cs" Link="IVaryLengthGlyph.cs" />
+    <Compile Include="..\Barcode.Shared\MultisetGlyph.cs" Link="MultisetGlyph.cs" />
+    <Compile Include="..\Barcode.Shared\Properties\AssemblyInfo.cs" Link="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+    <PackageReference Include="System.Drawing.Common" Version="4.5.1" />
+  </ItemGroup>
+</Project>
