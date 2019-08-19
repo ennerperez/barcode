@@ -58,8 +58,8 @@ Task("Build")
     {
         if (IsRunningOnWindows())
         {
-            var settings = new MSBuildSettings()
-			      .WithProperty("OutDir", buildDir);
+            var settings = new MSBuildSettings();
+			      //.WithProperty("OutDir", buildDir);
             // .WithProperty("PackageVersion", version)
             // .WithProperty("BuildSymbolsPackage", "false");
             settings.SetConfiguration(configuration);
@@ -68,8 +68,8 @@ Task("Build")
         }
         else
         {
-            var settings = new XBuildSettings()
-			      .WithProperty("OutDir", buildDir);
+            var settings = new XBuildSettings();
+			      //.WithProperty("OutDir", buildDir);
             // .WithProperty("PackageVersion", version)
             // .WithProperty("BuildSymbolsPackage", "false");
             settings.SetConfiguration(configuration);

@@ -75,7 +75,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Barcode.NetFx\Barcode.NetFx.csproj">
       <Project>{07a704c8-fdcf-4af1-b61a-b05c4940538e}</Project>
-      <Name>Barcode</Name>
+      <Name>Barcode.NetFx</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
